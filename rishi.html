@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cosmo Junkie</title>
+    <style>
+
+    /* Basic styles */
+      body {
+        font-family: Arial, sans-serif;
+        color: #dddbff;
+        background-color: #0a0b5b;
+        margin: 0;
+        padding: 0;
+        text-align: center;
+      }
+
+      /* Layout and typography */
+      h1, h2, h3, h4 {
+        text-align: center;
+      }
+
+      .grid {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+        padding: 20px;
+        text-align: center;
+      }
+
+      /* Button */
+      .button {
+        background: #22d0ff;
+        color: #222;
+        padding: 8px 16px;
+        border: none;
+        border-radius: 20px;
+        cursor: pointer;
+        text-transform: uppercase;
+        text-align: center;
+      }
+
+      /* Sections */
+      #welcome, #portfolio, #skills, #contact, footer {
+        padding: 40px 20px;
+        text-align: center;
+      }
+
+      /* Image Styling */
+      .welcome-img img, .projects img, #skills img {
+        width: 100%;
+        max-width: 150px;
+        border-radius: 10px;
+      }
+
+      /* Portfolio Items */
+      .projects {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+      }
+
+      /* Skills List */
+      #skills ul {
+        list-style: none;
+        display: flex;
+        gap: 20px;
+        justify-content: center;
+        text-align: center;
+      }
+
+      /* Footer */
+      footer {
+        background-color: #14153d;
+        color: #9893d8;
+        padding: 20px;
+        text-align: center;
+      }
+      /* Contact */
+      .contact { 
+        text-align: center;
+
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Navigation -->
+    <header>
+      <h1>Cosmo Junkie</h1>
+      <nav>
+        <a href="#portfolio">Portfolio</a> | 
+        <a href="#skills">Skills</a> | 
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <!-- Welcome Section -->
+    <section id="welcome" class="grid">
+      <div>
+        <h2>SDigital Marketing Guru | Growth Hacker | Strategy Architect</h2>
+        <p>Exploring the universe, one line of code at a time.</p>
+        <button class="button">View my work</button>
+      </div>
+      <div class="welcome-img">
+        <img src="https://i.ibb.co/kxPxsrv/trou-noir.png" alt="pic of planet">
+      </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio">
+      <h3>Some of my Projects</h3>
+      <div class="projects">
+        <div>
+          <img src="https://i.ibb.co/tZBs4kv/capsule-spatiale.png" alt="space race image">
+          <h4>Solar smash</h4>
+        </div>
+        <div>
+          <img src="https://i.ibb.co/sgWBR6M/saturne.png" alt="planet boy image">
+          <h4>Planet Boy API</h4>
+        </div>
+        <div>
+          <img src="https://i.ibb.co/Q80kSPQ/astronaute.png" alt="captain cosmo image">
+          <h4>Captain Cosmo Blog</h4>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills">
+      <h3>Things I Can Do</h3>
+      <ul class="grid">
+        <li>
+          <img src="https://i.ibb.co/hXvFQTy/meteor2647400.png" alt="JavaScript">
+          <h4>Digital Marketing</h4>
+        </li>
+        <li>
+          <img src="https://i.ibb.co/zJ69DMc/comet2534248.png" alt="React">
+          <h4>Ethical Hacking</h4>
+        </li>
+        <li>
+          <img src="https://i.ibb.co/0Y20t0c/comet2909923.png" alt="Firebase">
+          <h4>Video Editing</h4>
+        </li>
+      </ul>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+      <h3>Get In Touch</h3>
+      <form>
+        <input type="text" placeholder="NAME" style="display:block; margin: 10px 0; padding: 8px; width: 100%;">
+        <input type="email" placeholder="EMAIL" style="display:block; margin: 10px 0; padding: 8px; width: 100%;">
+        <textarea placeholder="YOUR MESSAGE" style="display:block; margin: 10px 0; padding: 8px; width: 100%;"></textarea>
+        <button class="button">Send Flare</button>
+      </form>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <p>&copy; 2024 Cosmo Junkie</p>
+    </footer>
+  </body>
+</html>
